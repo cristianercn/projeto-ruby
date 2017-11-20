@@ -2,7 +2,7 @@ default: &default
   adapter: 'postgresql'
   encoding: 'utf-8'
   pool: 5
-  host: '172.16.0.110'
+  host: '192.168.0.XX'
   username: <%= ENV['PG_USER'] %>
   password: <%= ENV['PG_PASS'] %>
   schema_search_path: 'votaprato'
