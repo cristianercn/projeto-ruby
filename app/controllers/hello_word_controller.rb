@@ -1,0 +1,2 @@
+class HelloWordController < ApplicationController
+end
