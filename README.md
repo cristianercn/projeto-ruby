@@ -27,8 +27,9 @@ Obs.: Não usar o schema public.
 - Criar o schema: (votaprato)
 
 
+gem install bundle
+
 - Criar dependências
-    gem install bundle
 
     bundle install
 
@@ -45,5 +46,7 @@ git status
 git add.
 git commit -am "projeto restaurante rails"
 git push -u origin master
+
+
 
 
