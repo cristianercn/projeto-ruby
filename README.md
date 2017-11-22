@@ -41,7 +41,7 @@ gem install bundler
 bundle install
 
 ```
-### 4 - Configuração do Banco de Dados:
+### 4 - Criando a Estrutura do Banco de Dados:
 ```
 bundle exec rake db:migrate -> (Cria a estrutura do banco de dados do projeto)
 
