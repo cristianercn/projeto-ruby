@@ -48,5 +48,5 @@ git checkout -- <file>...
 git status
 git add <file>...
 git commit -am "projeto restaurante rails"
-git push -u origin master
+git push -u origin master 
 ```
