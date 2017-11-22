@@ -15,6 +15,7 @@ Criar as seguintes variavéis de ambiente no Sistema Operacional:
 
  
 . Criar o schema: 
+
   Nome do Schema no Banco de dados => votaprato
 
 Obs.: Não usar o schema public.
