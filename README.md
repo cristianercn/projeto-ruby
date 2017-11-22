@@ -1,4 +1,12 @@
-# Instruções para rodar o projeto
+# Instruções para instalação  do projeto
+
+## Requisitos
+
+. Ruby
+. PostgreSql;
+
+
+### 1 - Configuração de variáveis de ambiente
 
 Criar as seguintes variavéis de ambiente no Sistema Operacional:
 
@@ -6,7 +14,7 @@ Criar as seguintes variavéis de ambiente no Sistema Operacional:
     ENV['PG_PASS']
     ENV['IP_SERVIDOR']
 
-### Banco de Dados: PostgreSQL 
+### 2 - Configuração do Banco de Dados: PostgreSQL 
 
 
 . Criar o Banco de dados: 
@@ -20,7 +28,8 @@ Criar as seguintes variavéis de ambiente no Sistema Operacional:
 
 Obs.: Não usar o schema public.
 
-### Bundler: Para agrupar as Gems
+#### 3 - Instalação de dependëncias (Bundler: Para agrupar as Gems)
+
 ```
 gem install bundler
 ```
@@ -29,19 +38,24 @@ gem install bundler
 bundle install
 
 ```
-
-### Comandos Rails:
-
+### 4 - Configuração do Banco de Dados:
 ```
 bundle exec rake db:migrate -> (Cria a estrutura do banco de dados do projeto)
 
-rais s -> (Roda o servidor local) 
+```
 
-localhost -> abre o projeto
+
+### 5 - Execução do Projeto :
 
 ```
 
-### Comandos GIT:
+rais s -> (cria um servidor local com a aplicação) 
+
+acessar a aplicação através da url http://localhost:3000
+
+```
+
+### 6 - Comandos GIT:
 
 ```
 git branch
