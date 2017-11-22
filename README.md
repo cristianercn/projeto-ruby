@@ -18,7 +18,7 @@ Criar o schema: (votaprato)
 
 Obs.: Não usar o schema public.
 
-### Bundler - Para agrupar as gemns
+### Bundler - Para agrupar as Gems
 ```
 gem install bundler
 ```
