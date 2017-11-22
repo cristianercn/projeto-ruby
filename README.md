@@ -3,6 +3,7 @@
 ## Requisitos
 
 . Ruby
+
 . PostgreSql;
 
 
@@ -28,7 +29,9 @@ Criar as seguintes variavéis de ambiente no Sistema Operacional:
 
 Obs.: Não usar o schema public.
 
-#### 3 - Instalação de dependëncias (Bundler: Para agrupar as Gems)
+### 3 - Instalação de dependëncias 
+
+#### (Bundler: Para agrupar as Gems)
 
 ```
 gem install bundler
@@ -55,7 +58,7 @@ acessar a aplicação através da url http://localhost:3000
 
 ```
 
-### 6 - Comandos GIT:
+### 6 - GIT e Github:
 
 ```
 git branch
@@ -64,4 +67,5 @@ git status
 git add <file>...
 git commit -am "projeto restaurante rails"
 git push -u origin master 
+git pull
 ```
