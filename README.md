@@ -6,19 +6,20 @@ Criar as seguintes variavéis de ambiente no Sistema Operacional:
     ENV['PG_PASS']
     ENV['IP_SERVIDOR']
 
-### Banco de Dados - PostgreSQL 
+### Banco de Dados: PostgreSQL 
 
-- Nome do Banco de dados: 
-Criar o Banco de dados: (cristiane_estudo)
-    cristiane_estudo
 
-- Criar o schema dentro do Banco: 
-Criar o schema: (votaprato)
-    votaprato
+. Criar o Banco de dados: 
+
+  Nome do Banco de dados => cristiane_estudo
+
+ 
+. Criar o schema: 
+  Nome do Schema no Banco de dados => votaprato
 
 Obs.: Não usar o schema public.
 
-### Bundler - Para agrupar as Gems
+### Bundler: Para agrupar as Gems
 ```
 gem install bundler
 ```
@@ -42,8 +43,10 @@ localhost -> abre o projeto
 ### Comandos GIT:
 
 ```
+git branch
+git checkout -- <file>...
 git status
-git add.
+git add <file>...
 git commit -am "projeto restaurante rails"
 git push -u origin master
 ```
