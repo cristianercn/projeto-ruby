@@ -68,4 +68,5 @@ git add <file>...
 git commit -am "projeto restaurante rails"
 git push -u origin master 
 git pull
+git merge 
 ```
