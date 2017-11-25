@@ -61,6 +61,7 @@ acessar a aplicação através da url http://localhost:3000
 ### 6 - GIT e Github:
 
 ```
+git clone https://github.com/cristianercn/projeto-ruby.git
 git branch
 git checkout -- <file>...
 git status
