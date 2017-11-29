@@ -1,0 +1,59 @@
+stages:
+  - deploy
+
+staging:
+  stage: deploy
+  environment: staging
+  script:
+    - export RAILS_ENV="staging"
+    - export SERVIDOR="200.200.200.200"
+    - export VHOSTS="votaprato-staging.alfa.com.br"
+    - if ! rbenv shell 2.2.4; then rbenv install -s 2.2.4; rbenv rehash; fi
+    - if ! rbenv which mina; then gem install mina --no-ri --no-rdoc; rbenv rehash; fi
+    - mina setup
+    - mina deploy
+    - mina deploy:cleanup
+  only:
+    - integracao_continua
+    - /^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,2}$/
+
+  tags:
+    - deployer
+
+production:
+  stage: deploy
+  environment: production
+  script:
+    - export RAILS_ENV="production"
+    - export SERVIDOR="201.201.201.201"
+    - export VHOSTS="votaprato-production.alfa.com.br"
+    - if ! rbenv shell 2.2.4; then rbenv install -s 2.2.4; rbenv rehash; fi
+    - if ! rbenv which mina; then gem install mina --no-ri --no-rdoc; rbenv rehash; fi
+    - mina setup
+    - mina deploy
+    - mina deploy:cleanup
+  only:
+    - /^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,2}-producao$/
+  tags:
+    - deployer
+
+
+
+# test:
+#  stage: test
+#  environment: test
+#  script:
+#    - echo "Executanto testes automatizados"
+#    - export RAILS_ENV="test"
+#    - rbenv install -s 2.2.4
+#    - gem install mina mina-whenever --no-ri --no-rdoc
+#    - gem install bundler --no-ri --no-rdoc
+#    - mina setup
+#    - mina deploy
+#    - mina deploy:cleanup
+#    - bundle exec rake db:reset
+#    - bundle gem rake criar_db:alfatools
+#    - bundle exec rake test -v
+#  tags:
+#    - centos7
+#    - tester
